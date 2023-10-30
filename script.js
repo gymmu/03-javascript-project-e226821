@@ -34,3 +34,25 @@ result.push(capitalizedElement)
   }
   return result.join("")
 }
+
+
+
+
+export function aufgabe03(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+const currentElement = input[i]
+
+if (currentElement === 'e' ) {
+  
+  result.push(1)
+
+}
+
+
+
+  }
+  return result.join("")
+}
