@@ -86,3 +86,35 @@ count = count + 1
   return count
 }
 
+
+
+export function aufgabe05(args) {
+  const input = args
+  const result = []
+let capitalLetters = 0
+
+//Enthaltet keine Grossbuchstaben 
+  for (let i = 0; i < input.length; i++) {
+const currentElement = input[i]
+
+
+if (currentElement === ".") {
+  //Macht nichts
+}else if (currentElement === " "){
+  //Ignoriere Leerschläge
+}else if (currentElement === currentElement.toUpperCase()){
+  capitalLetters++ 
+}
+  }
+
+if (capitalLetters > 0) {
+  return true
+}else {
+  return false 
+}
+
+
+
+  return true
+}
+
