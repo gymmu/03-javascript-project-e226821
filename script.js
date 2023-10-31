@@ -41,18 +41,24 @@ result.push(capitalizedElement)
 export function aufgabe03(args) {
   const input = args
   const result = []
+  let count = 0
 
+  //Es sollte nur ein e enthalten. 
   for (let i = 0; i < input.length; i++) {
 const currentElement = input[i]
 
 if (currentElement === 'e' ) {
   
-  result.push(1)
+  count = count + 1 
 
+  // Sollte "E"s zählen
 }
-
-
-
+else if (currentElement === 'E'){
+count = count + 1
+}
   }
-  return result.join("")
+  return count
 }
+
+
+
