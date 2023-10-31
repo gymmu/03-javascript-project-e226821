@@ -62,3 +62,27 @@ count = count + 1
 
 
 
+
+export function aufgabe04(args) {
+  const input = args
+  const result = []
+  let count = 0 
+  assert.equal(res,4)
+
+  // Sollte 4 Wörter zählen.
+  for (let i = 0; i < input.length; i++) {
+const currentElement = input[i]
+
+if (currentElement === 'e'){
+count = count + 1 
+
+}
+
+else if (currentElement) {
+count = count + 1 
+
+}
+  }
+  return count
+}
+
