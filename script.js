@@ -150,29 +150,34 @@ export function aufgabe06(args) {
 
 
 
+
 export function aufgabe07(args) {
   const input = args
   const result = []
-  let capitalLetters = 0
- 
+let capitalLetters = 0
+
+//Enthaltet keine Grossbuchstaben 
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input [i]
-    if (currentElement === ".") {
- //Macht nichts
-    } if (currentElement !== " ") {
-  //ignoriert Leerschläge
-    }
-   
-    else if (currentElement !== currentElement.toLowerCase()) {
-      capitalLetters++
-    
-    } 
+const currentElement = input[i]
+
+
+if (currentElement === ".") {
+  //Macht nichts
+}else if (currentElement === " "){
+  //Ignoriere Leerschläge
+
+}else if (currentElement !== currentElement.toLowerCase()) {
+  capitalLetters++
+}
   }
- 
-  if (capitalLetters> 0) {
-    return true
-  }else {
-    return false
-  }
- 
+
+if (capitalLetters > 0) {
+  return true
+}else {
+  return false 
+}
+
+
+
+  return true
 }
