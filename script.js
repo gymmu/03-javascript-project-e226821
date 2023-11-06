@@ -102,9 +102,8 @@ if (currentElement === ".") {
   //Macht nichts
 }else if (currentElement === " "){
   //Ignoriere Leerschläge
-}
 
-else if (currentElement !== currentElement.toLowerCase()) {
+}else if (currentElement !== currentElement.toLowerCase()) {
   capitalLetters++
 }
   }
@@ -120,3 +119,60 @@ if (capitalLetters > 0) {
   return true
 }
 
+
+
+export function aufgabe06(args) {
+  const input = args
+  const result = []
+  let capitalLetters = 0
+ 
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input [i]
+    if (currentElement === ".") {
+ //Macht nichts
+    } if (currentElement !== " ") {
+  //ignoriert Leerschläge
+    }
+   
+    else if (currentElement !== currentElement.toLowerCase()) {
+      capitalLetters++
+    
+    } 
+  }
+ 
+  if (capitalLetters> 0) {
+    return true
+  }else {
+    return false
+  }
+ 
+}
+
+
+
+export function aufgabe07(args) {
+  const input = args
+  const result = []
+  let capitalLetters = 0
+ 
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input [i]
+    if (currentElement === ".") {
+ //Macht nichts
+    } if (currentElement !== " ") {
+  //ignoriert Leerschläge
+    }
+   
+    else if (currentElement !== currentElement.toLowerCase()) {
+      capitalLetters++
+    
+    } 
+  }
+ 
+  if (capitalLetters> 0) {
+    return true
+  }else {
+    return false
+  }
+ 
+}
