@@ -102,8 +102,10 @@ if (currentElement === ".") {
   //Macht nichts
 }else if (currentElement === " "){
   //Ignoriere Leerschläge
-}else if (currentElement === currentElement.toUpperCase()){
-  capitalLetters++ 
+}
+
+else if (currentElement !== currentElement.toLowerCase()) {
+  capitalLetters++
 }
   }
 
