@@ -149,10 +149,31 @@ export function aufgabe06(args) {
 }
 
 
+ 
+export function aufgabe07(args) {
+  const input = args
+  const result = []
+  let capitalLetters = 0
 
+//Soll keine Grossbuchstaben enthalten 
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  //Punkt soll Sonderzeichen sein
+  if (currentElement === ".") {
+} else if  (currentElement === " ") {
 
+} else if (currentElement !== currentElement.toLowerCase()) {
+  capitalLetters ++
+}  
+}
+if (capitalLetters > 0) {
+  return true
+  } else { 
+  return false
+ }
+}
 
- export function aufgabe9 (args) {
+ export function aufgabe09 (args) {
   const input = args
   let len = 0 
   for (let i = 0; i < input.length; i++) {
@@ -203,3 +224,32 @@ let pos = -1
   return -1
 }
 
+
+
+export function aufgabe13 (args) {
+  const input = args
+  const result = []
+  
+let pos = -1
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    pos = pos + 1
+    if( currentElement ==='e') {
+    return true
+    
+  }else{
+
+  }
+  }
+
+
+  return -1
+}
+
+export function aufgabe14 (args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
