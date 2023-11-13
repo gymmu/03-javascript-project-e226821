@@ -151,33 +151,33 @@ export function aufgabe06(args) {
 
 
 
-export function aufgabe07(args) {
+
+ export function aufgabe9 (args) {
   const input = args
-  const result = []
-let capitalLetters = 0
-
-//Enthaltet keine Grossbuchstaben 
+  let len = 0 
   for (let i = 0; i < input.length; i++) {
-const currentElement = input[i]
-
-
-if (currentElement === ".") {
-  //Macht nichts
-}else if (currentElement === " "){
-  //Ignoriere Leerschläge
-
-}else if (currentElement !== currentElement.toLowerCase()) {
-  capitalLetters++
-}
-  }
-
-if (capitalLetters > 0) {
-  return true
+    len++
+    
+  } 
+if (len === 6) {
+  return true 
 }else {
   return false 
 }
-
-
-
-  return true
 }
+
+export function aufgabe11 (args) {
+  const input = args
+  const result = []
+  let ascii = -1
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  ascii = currentElement.charCodeAt(0)
+  return ascii
+}
+//Soll null zurückgeben
+  return null
+}
+
+
+
