@@ -234,22 +234,28 @@ let pos = -1
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    pos = pos + 1
-    if( currentElement ==='e') {
-    return true
-    
-  }else{
-
+    if (currentElement ==='e') {
+    pos = i
+  
   }
   }
-
-
-  return -1
+  return pos
 }
+
 
 export function aufgabe14 (args) {
   const input = args
   const result = []
   
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  
+  if (currentElement === 'e') {
+    return -1
+  }else if (currentElement === 'e')
+  return 2
+
+}
+
   return result.join("")
 }
