@@ -249,11 +249,12 @@ export function aufgabe14 (args) {
   
 for (let i = 0; i < input.length; i++) {
   const currentElement = input[i]
-  
+  //Soll eine 2 zurückgeben, wenn nur "e"s vorkommen.
   if (currentElement === 'e') {
-    return -1
+    return 2
+    
   }else if (currentElement === 'e')
-  return 2
+  return false
 
 }
 
