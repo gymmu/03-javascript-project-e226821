@@ -169,7 +169,13 @@ if (len === 6) {
 export function aufgabe11 (args) {
   const input = args
   const result = []
-  let ascii = -1
+  let ascii = null
+
+  if (input.length >1) {  //Funktionswächter
+    return null
+  }
+
+
 for (let i = 0; i < input.length; i++) {
   const currentElement = input[i]
   ascii = currentElement.charCodeAt(0)
@@ -179,5 +185,21 @@ for (let i = 0; i < input.length; i++) {
   return null
 }
 
+export function aufgabe12 (args) {
+  const input = args
+  const result = []
+  
+let pos = -1
 
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    pos = pos + 1 
+    if( currentElement ==='e') {
+    return pos
+  }
+  }
+
+
+  return -1
+}
 
