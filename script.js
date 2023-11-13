@@ -254,7 +254,7 @@ for (let i = 0; i < input.length; i++) {
     return 2
     
   }else if (currentElement === 'e')
-  return false
+  return -1
 
 }
 
