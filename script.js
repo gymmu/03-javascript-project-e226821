@@ -246,17 +246,25 @@ let pos = -1
 export function aufgabe14 (args) {
   const input = args
   const result = []
-  
+  let capitalLetters = 0
+
 for (let i = 0; i < input.length; i++) {
   const currentElement = input[i]
   //Soll eine 2 zurückgeben, wenn nur "e"s vorkommen.
   if (currentElement === 'e') {
     return 2
-    
-  }else if (currentElement === 'e')
-  return -1
+    //Sollte -1 zurückgeben (wenn keine "e"s vorhanden sind) 
+  }else if (currentElement !== 'e'){
+    return -1
+  }
+
+
+
+  
+  return result.join()
+}
+
+
 
 }
 
-  return result.join("")
-}
