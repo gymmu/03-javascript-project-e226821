@@ -173,6 +173,27 @@ if (capitalLetters > 0) {
  }
 }
 
+
+export function aufgabe08 (args) {
+  const input = args
+  const result = []
+  
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+
+  if (currentElement === 'e')
+  
+}
+
+
+  return result.join("")
+}
+
+
+
+
+
+
  export function aufgabe09 (args) {
   const input = args
   let len = 0 
