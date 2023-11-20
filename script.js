@@ -339,4 +339,9 @@ export function aufgabe21 (args) {
   const input = args
   const result = []
 
+for (let i = input.length -1; i>=0; i--) {
+  const currentElement = input[i]
+  
+}
+  return result.join("")
 }
