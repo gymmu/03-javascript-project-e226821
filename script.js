@@ -177,20 +177,20 @@ if (capitalLetters > 0) {
 export function aufgabe08 (args) {
   const input = args
   const result = []
-  
-for (let i = 0; i < input.length; i++) {
-  const currentElement = input[i]
 
-  if (currentElement === 'e')
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    
+  }
+  if (currentElement === 'e') {
+  replace (3)
   
-}
+  }
 
 
   return result.join("")
 }
-
-
-
 
 
 
@@ -207,6 +207,17 @@ if (len === 6) {
   return false 
 }
 }
+
+
+
+
+export function aufgabe10 (args) {
+  const input = args
+  let len = 0 
+
+}
+
+
 
 export function aufgabe11 (args) {
   const input = args
@@ -282,10 +293,30 @@ for (let i = 0; i < input.length; i++) {
 
 
   
-  return result.join()
+  return result.join("")
 }
 
 
 
 }
 
+
+
+
+export function aufgabe15 (args) {
+  const input = args
+  const result = []
+ 
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    
+  
+if (currentElement === " ") {
+  return result.join("")
+}
+result.push(currentElement)
+  }
+return result.join("")
+
+}
