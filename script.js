@@ -327,4 +327,16 @@ export function aufgabe18 (args) {
   const input = args
   const result = []
  
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  
+}
+
+}
+
+
+export function aufgabe21 (args) {
+  const input = args
+  const result = []
+
 }
