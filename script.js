@@ -320,3 +320,11 @@ result.push(currentElement)
 return result.join("")
 
 }
+
+
+
+export function aufgabe18 (args) {
+  const input = args
+  const result = []
+ 
+}
