@@ -79,7 +79,7 @@ count = count + 1
 }
 
 else if (currentElement) {
-count = count + 1 
+count = count + 1
 
 }
   }
@@ -291,26 +291,17 @@ let pos = -1
 export function aufgabe14 (args) {
   const input = args
   const result = []
-  let capitalLetters = 0
-
-for (let i = 0; i < input.length; i++) {
-  const currentElement = input[i]
-  //Soll eine 2 zurückgeben, wenn nur "e"s vorkommen.
-  if (currentElement === 'e') {
-    return 2
-    //Sollte -1 zurückgeben (wenn keine "e"s vorhanden sind) 
-  }else if (currentElement !== 'e'){
-    return -1
+  let count = 0
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === 'e') {// erkennt e
+      count = count + 1
+      if (count === 3){
+        return i
+      }
+    }
   }
-
-
-
-  
-  return result.join("")
-}
-
-
-
+return -1
 }
 
 
