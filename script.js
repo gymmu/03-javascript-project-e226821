@@ -397,3 +397,23 @@ for (let i = input.length -1; i>=0; i--) {
 }
   return result.join("")
 }
+
+
+
+export function aufgabe22 (args) {
+  const input = args
+  const result = []
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+}
+  if (currentElement !== 'k') {
+    return true 
+  }
+
+
+
+
+
+  
+  return result.join("")
+}
