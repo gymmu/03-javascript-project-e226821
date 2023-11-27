@@ -149,29 +149,23 @@ export function aufgabe06(args) {
 }
 
 
- 
+
 export function aufgabe07(args) {
   const input = args
   const result = []
-  let capitalLetters = 0
-
-//Soll keine Grossbuchstaben enthalten 
-for (let i = 0; i < input.length; i++) {
-  const currentElement = input[i]
-  //Punkt soll Sonderzeichen sein
-  if (currentElement === ".") {
-} else if  (currentElement === " ") {
-
-} else if (currentElement !== currentElement.toLowerCase()) {
-  capitalLetters ++
-}  
-}
-if (capitalLetters > 0) {
-  return true
-  } else { 
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === 'u') {
+      if (input[i+1] === 'n') {
+        if (input[i+2] === 'd') {
+          return true
+        }
+      }
+    }
+  }
   return false
- }
 }
+
 
 
 export function aufgabe08 (args) {
@@ -215,20 +209,21 @@ export function aufgabe10(args) {
   const input = args
   
   if (input.length !== 7) return false
-  if (input[0] !== "#") return false
+  if (input[0] !== "#" ) return false
 
 
 for (let i = 1; i < input.length; i++) {
   const currentElement = input[i]
   const ascii = currentElement.charCodeAt(0)
-  if (48<= ascii && ascii <= 57){
+  if (48 <= ascii && ascii <= 57) {
     //mache nichts: ist eine Zahl
 
-  }else if (65 <= ascii && ascii <= 70) {
+  } else if (65 <= ascii && ascii <= 70) {
     //mache nichts: ist A-F
-  }else 
+  } else {
     return false 
   }
+}
 }
 
 
@@ -324,6 +319,21 @@ result.push(currentElement)
 return result.join("")
 
 }
+
+export function aufgabe16 (args) {
+  const input = args
+  const result = []
+  
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  
+  if (currentElement === $)
+
+
+  return result.join("")
+}
+}
+
 
 
 
