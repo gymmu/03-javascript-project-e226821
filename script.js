@@ -73,11 +73,12 @@ export function aufgabe04(args) {
   for (let i = 0; i < input.length; i++) {
 const currentElement = input[i]
 
-if (currentElement !== ' '){
+if (currentElement === ' '){
 count = count + 1 
 
 }
   }
+  count = count + 1
   return count
 }
 
@@ -170,14 +171,12 @@ export function aufgabe08 (args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    
+     if (currentElement === 'e') {
+  result.push('3')
+  }else{
+    result.push(currentElement)
   }
-  if (currentElement === 'e') {
-  replace (3)
-  
   }
-
-
   return result.join("")
 }
 
