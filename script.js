@@ -199,26 +199,38 @@ if (len === 6) {
 
 
 
+
+
 export function aufgabe10(args) {
-  const input = args
+  const input = args;
   
-  if (input.length !== 7) return false
-  if (input[0] !== "#" ) return false
-
-
-for (let i = 1; i < input.length; i++) {
-  const currentElement = input[i]
-  const ascii = currentElement.charCodeAt(0)
-  if (48 <= ascii && ascii <= 57) {
-    //mache nichts: ist eine Zahl
-
-  } else if (65 <= ascii && ascii <= 70) {
-    //mache nichts: ist A-F
-  } else {
-    return false 
+  if (input.length !== 7) {
+  return false;
   }
-}
-}
+  
+  if (input[0] !== "#") {
+  return false;
+  }
+  
+  for (let i = 1; i < input.length; i++) {
+  const currentElement = input[i];
+  const ascii = currentElement.charCodeAt(0);
+  
+  if (48 <= ascii && ascii <= 57) {
+  // mache nichts: ist eine Zahl
+  } else if (65 <= ascii && ascii <= 70) {
+  // mache nichts: ist A-F
+  } else {
+  return false;
+  }
+  }
+  
+  return true;
+  }
+
+
+
+
 
 
 export function aufgabe11 (args) {
