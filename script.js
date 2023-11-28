@@ -73,13 +73,8 @@ export function aufgabe04(args) {
   for (let i = 0; i < input.length; i++) {
 const currentElement = input[i]
 
-if (currentElement === 'e'){
+if (currentElement !== ' '){
 count = count + 1 
-
-}
-
-else if (currentElement) {
-count = count + 1
 
 }
   }
@@ -442,3 +437,31 @@ export function aufgabe26 (args) {
   return (result)
 
 }
+
+
+
+export function aufgabe27 (args) {
+  const input = args
+  const result = []
+  //falls es keine Eingabe hat, wird es direkt zurückgegeben.
+  if (input.length===0){return false}
+  for (let i = 0; i < input.length; i++) {
+   
+    const currentElement = input[i]
+    const ascii = currentElement.charCodeAt(0)
+    if (48 <= ascii && ascii <= 57){
+ 
+  }
+else  return false
+}
+return true
+}
+
+
+
+
+
+
+
+
+
