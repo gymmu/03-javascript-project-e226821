@@ -324,10 +324,22 @@ return result.join("")
 export function aufgabe16 (args) {
   const input = args
   const result = []
+  const switchFirst = []
+  const listSecond = []
   
-for (let i = 0; i < input.length; i++) {
-  const currentElement = input[i]
+for (let i = 0; i < text.length; i++) {
+  if ( $[i] === "l") {
+    switchFirst = false
+  }else {
+    if (switchFirst === true) {
+      listFirst.push(text[i])
+    }else {
+      listSecond.push(text [i])
+    }
+  }
   
+const result = [listFirst.join(""), list ]
+
   if (currentElement === $)
 
 
@@ -500,6 +512,20 @@ return true
 
 
 
+export function aufgabe28 (args) {
+  const input = args
+  const result = []
+
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  
+}
+
+
+
+
+
+}
 
 
 export function bubbleSort (args) {
