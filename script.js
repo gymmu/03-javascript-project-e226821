@@ -143,7 +143,8 @@ export function aufgabe07(args) {
     const currentElement = input[i]
     if (currentElement === 'U') {
       if (input[i+1] === 'n') {
-        if (input[i+2] === 'd') {
+       if (input[i+2] === 'd') {
+        //erkennt das Wort "und"
           return true
         }
       }
@@ -162,6 +163,7 @@ export function aufgabe08 (args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
      if (currentElement === 'e') {
+      //ersetzt "e" mit "3"
   result.push('3')
   }else{
     result.push(currentElement)
@@ -180,6 +182,7 @@ export function aufgabe08 (args) {
     
   } 
 if (len === 6) {
+  //prüft ob die Eingabe 6 Zeichen lang ist
   return true 
 }else {
   return false 
@@ -247,7 +250,7 @@ export function aufgabe12 (args) {
   const result = []
   
 let pos = -1
-
+//Position des ersten "e" suchen
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     pos = pos + 1 
@@ -272,7 +275,7 @@ let pos = -1
     const currentElement = input[i]
     if (currentElement ==='e') {
     pos = i
-  
+  //Sucht die Position des letzten "e"s
   }
   }
   return pos
@@ -288,6 +291,7 @@ export function aufgabe14 (args) {
     if (currentElement === 'e') {// erkennt e
       count = count + 1
       if (count === 3){
+        //Position des dritten "e"s suchen
         return i
       }
     }
@@ -309,6 +313,7 @@ export function aufgabe15 (args) {
   
 if (currentElement === " ") {
   return result.join("")
+  //bricht nach dem ersten " " ab.
 }
 result.push(currentElement)
   }
@@ -329,6 +334,39 @@ for (let i = 0; i < input.length; i++) {
   return result.join("")
 }
 }
+
+
+
+
+export function aufgabe17 (args) {
+  const input = args
+  const result = []
+ 
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  
+  function firstSentence() {
+    const text = "Hier ist Text. Und hier noch mehr."
+    const result = []
+    for (let i = 0; i < text.length; i++) {
+      result.push(text[i])
+      if (text[i] === ".") {
+        if (text.length - 1 === i) {
+          return [result.join(""), false]
+        } else {
+          return [result.join(""), true]
+        }
+      }
+    }
+    return [result.join(""), false]
+  }
+  
+
+
+}
+}
+
+
 
 
 
@@ -369,6 +407,7 @@ export function aufgabe20 (args) {
     const currentElement = input[i]
 
   if (currentElement === '.' )  
+  //Prüfen ob nach jedem Punkt ein Leerzeichen kommt.
   if (input [i+1] === ' ') {
     return true
   }
@@ -389,6 +428,7 @@ export function aufgabe21 (args) {
 
 for (let i = input.length -1; i>=0; i--) {
   const currentElement = input[i]
+  //kehrt die Eingabe um.
   
 }
   return result.join("")
