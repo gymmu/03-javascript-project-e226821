@@ -117,20 +117,22 @@ if (capitalLetters > 0) {
 
 
 export function aufgabe06(args) {
-const input = args;
-const result = []
+  const input = args; //Diese Aufgabe soll testen, ob in der Eingabe ein Sonderzeichen vorkommt.
 
 for (let i = 0; i < input.length; i++) {
-const currentElement = input[i];
+  const currentElement = input[i] ;
+  const ascii = currentElement.charCodeAt(0)
 
-if (currentElement !== ' ') {
-if (currentElement !== currentElement.toLowerCase()) {
-return true;
+  if (65 <= ascii && ascii <= 90) {
+    //Prüft, ob es sich hier um einen Grossbuchstaben handelt.
+  } else if (97 <= ascii && ascii <=122) {
+    //Prüft, ob es sich hier um einen Kleinbuchstaben handelt.
+  } else if (currentElement === ' ') {
+  }else {
+    return true
+  }
 }
-}
-}
-
-return false;
+return false
 }
 
 
