@@ -447,17 +447,29 @@ for (let i = 0; i < input.length; i++) {
     return true 
   }
 
-
-
-
-
   
   return result.join("")
 }
 
 
 
+export function aufgabe23 (args) {
+  const input = args
+  const result = []
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+}
+}
 
+
+
+export function aufgabe25 (args) {
+  const input = args
+  const result = []
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+}
+}
 
 
 
