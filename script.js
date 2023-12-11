@@ -350,33 +350,20 @@ const result = [listFirst.join(""), list ]
 
 
 
-
-export function aufgabe17 (args) {
-  const input = args
-  const result = []
+export function aufgabe17(args) {
+  const input = args;
+  const result = input.split(',')
  
-for (let i = 0; i < input.length; i++) {
-  const currentElement = input[i]
-  
-  function firstSentence() {
-    const text = "Hier ist Text. Und hier noch mehr."
-    const result = []
-    for (let i = 0; i < text.length; i++) {
-      result.push(text[i])
-      if (text[i] === ".") {
-        if (text.length - 1 === i) {
-          return [result.join(""), false]
-        } else {
-          return [result.join(""), true]
-        }
+ 
+  for (let i = 0; i < result.length - 1; i++) {
+    for (let j = 0; j < result.length - 1 - i; j++) {
+      if (result[j] > result[j + 1]) {
+  [result[j], result[j + 1]] = [result[j + 1], result[j]]
       }
     }
-    return [result.join(""), false]
   }
-  
-
-
-}
+ 
+  return result.join(',')
 }
 
 
@@ -394,6 +381,7 @@ for (let i = 0; i < input.length; i++) {
 }
 
 }
+
 
 export function aufgabe19 (args) {
   const input = args
@@ -529,7 +517,6 @@ export function  aufgabe28 (args) {
 
 
 
-{}
 export function bubbleSort (args) {
   
   const list = args.split("")  // Damit wandeln wir den Text in eine Liste um, das brauchen wir wenn wir Elemente vertauschen möchten.
