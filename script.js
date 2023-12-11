@@ -512,23 +512,24 @@ return true
 }
 
 
-
-export function aufgabe28 (args) {
+export function  aufgabe28 (args) {
   const input = args
-  const result = []
-
-for (let i = 0; i < input.length; i++) {
-  const currentElement = input[i]
-  
+  const zahlen = input.split(' ')
+ 
+  if (zahlen.length === 2 && !isNaN(zahlen[0]) && !isNaN(zahlen[1])) {
+    const zahl1 = parseFloat(zahlen[0]);
+    const zahl2 = parseFloat(zahlen[1]);
+   
+    const summe = zahl1 + zahl2;
+    return `${summe}`;
+} else {
+    return null;
+}
 }
 
 
 
-
-
-}
-
-
+{}
 export function bubbleSort (args) {
   
   const list = args.split("")  // Damit wandeln wir den Text in eine Liste um, das brauchen wir wenn wir Elemente vertauschen möchten.
