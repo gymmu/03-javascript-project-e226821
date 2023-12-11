@@ -136,21 +136,22 @@ return false
 }
 
 
-export function aufgabe07(args) {
+export function aufgabe07 (args) {
   const input = args
   const result = []
-  for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
-    if (currentElement === 'U') {
-      if (input[i+1] === 'n') {
-       if (input[i+2] === 'd') {
-        //erkennt das Wort "und"
-          return true
-        }
+ 
+  for (let i=0; i < input.length; i++) {
+    const currentElement = input [i]
+  if (currentElement === "u") {
+    if (input[i+1] === "n") {
+      if (input[i+2] === "d") {
+        // wenn der Code bis hier kommt, sind die Zeichen u,n,d hintereinander
+      return true
       }
     }
   }
-  return false
+  }
+return false
 }
 
 
