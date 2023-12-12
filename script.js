@@ -356,9 +356,9 @@ export function aufgabe17(args) {
  
  
   for (let i = 0; i < result.length - 1; i++) {
-    for (let j = 0; j < result.length - 1 - i; j++) {
-      if (result[j] > result[j + 1]) {
-  [result[j], result[j + 1]] = [result[j + 1], result[j]]
+    for (let i = 0; i < result.length - 1 - i; i++) {
+      if (result[i] > result[i + 1]) {
+  [result[i], result[i + 1]] = [result[i + 1], result[i]]
       }
     }
   }
@@ -367,21 +367,28 @@ export function aufgabe17(args) {
 }
 
 
-
-
-
-
 export function aufgabe18 (args) {
-  const input = args
+  const input = "17  Julia"
   const result = []
- 
-for (let i = 0; i < input.length; i++) {
-  const currentElement = input[i]
-  
-}
+  const text = "Ich heisse Julia und bin 17 Jahre alt."
+  const phrases = []
+  let currentPhrase = []
+  for (let i = 0; i < args.length; i++) {
+    const currentElement = [i]
+    if (currentElement === ',') {
+      
+      phrases.push(currentPhrase.join(""))
+      currentPhrase = []  // Alles löschen, was im aktuellen Satz drin ist.
+    } else {
+      // Wenn wir keinen '.' lesen, dann an den aktuellen Satz anhängen.
+      currentPhrase.push(currentElement)
+    }
+  }
+  return phrases
 
-}
 
+  return result.join("")
+}
 
 export function aufgabe19 (args) {
   const input = args
@@ -463,12 +470,53 @@ for (let i = 0; i < input.length; i++) {
 
 
 
+
+export function aufgabe24 (args) {
+  const input = args
+  const result = []
+
+  return result.join("")
+}
+
+
+
+
 export function aufgabe25 (args) {
   const input = args
   const result = []
+
+  if (input.length % 2 === 0) {
+  //Prüft ob Input.length gerade ist.
+
+// Brauchen -1 um auf Position zu kommen, weil wir bei 0 zu zählenn anfangen. 
+const pos = input.length / 2 - 1 
+
 for (let i = 0; i < input.length; i++) {
   const currentElement = input[i]
+  if (i === pos || i === pos + 1){
+    //macht nichts.
+  }else {
+    result.push(currentElement)
 }
+}
+
+
+} else {
+  //Input.length ist ungerade
+
+  const pos = Math.floor (input.length / 2 )
+//Das mittlere Zeichen soll gelöscht werden
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  
+  if (i === pos){
+//macht nichts
+}else {
+  result.push(currentElement)
+}
+}
+}
+  return result.join("")
 }
 
 
