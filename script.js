@@ -458,16 +458,27 @@ for (let i = 0; i < input.length; i++) {
   return result.join("")
 }
 
+export function aufgabe23(args) {
+  const input = args;
+  const result = [];
 
+  if (input.length === 0) {
+    return ''; // Gibt leer zurück.
+  }
 
-export function aufgabe23 (args) {
-  const input = args
-  const result = []
-for (let i = 0; i < input.length; i++) {
-  const currentElement = input[i]
+  const firstChar = input.charAt(0);
+
+  result.push(firstChar); // Hängt erstes Zeichen am Anfang der Ausgabe an.
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i];
+    result.push(currentElement);
+  }
+
+  result.push(firstChar); // Hängt erstes Zeichen am Schluss der Ausgabe an. 
+
+  return result.join('');
 }
-}
-
 
 
 
