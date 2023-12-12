@@ -356,9 +356,9 @@ export function aufgabe17(args) {
  
  
   for (let i = 0; i < result.length - 1; i++) {
-    for (let j = 0; j < result.length - 1 - i; j++) {
-      if (result[j] > result[j + 1]) {
-  [result[j], result[j + 1]] = [result[j + 1], result[j]]
+    for (let i = 0; i < result.length - 1 - i; i++) {
+      if (result[i] > result[i + 1]) {
+  [result[i], result[i + 1]] = [result[i + 1], result[i]]
       }
     }
   }
@@ -367,21 +367,29 @@ export function aufgabe17(args) {
 }
 
 
-
-
-
-
 export function aufgabe18 (args) {
-  const input = args
+  const input = "17  Julia"
   const result = []
+  const text = "Ich heisse Julia und bin 17 Jahre alt."
+  const phrases = []
+  let currentPhrase = []
+  for (let i = 0; i < args.length; i++) {
+    const currentElement = [i]
+    if (currentElement === ',') {
+      
+      phrases.push(currentPhrase.join(""))
+      currentPhrase = []  // Alles löschen, was im aktuellen Satz drin ist.
+    } else {
+      // Wenn wir keinen '.' lesen, dann an den aktuellen Satz anhängen.
+      currentPhrase.push(currentElement)
+    }
+  }
+  return phrases
+
  
-for (let i = 0; i < input.length; i++) {
-  const currentElement = input[i]
-  
+ 
+  return result.join("")
 }
-
-}
-
 
 export function aufgabe19 (args) {
   const input = args
@@ -463,12 +471,22 @@ for (let i = 0; i < input.length; i++) {
 
 
 
+
+export function aufgabe24 (args) {
+  const input = args
+  const result = []
+
+  return result.join("")
+}
+
+
+
+
 export function aufgabe25 (args) {
   const input = args
   const result = []
-for (let i = 0; i < input.length; i++) {
-  const currentElement = input[i]
-}
+
+  return result.join("")
 }
 
 
