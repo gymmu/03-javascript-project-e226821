@@ -386,8 +386,7 @@ export function aufgabe18 (args) {
   }
   return phrases
 
- 
- 
+
   return result.join("")
 }
 
@@ -486,6 +485,37 @@ export function aufgabe25 (args) {
   const input = args
   const result = []
 
+  if (input.length % 2 === 0) {
+  //Prüft ob Input.length gerade ist.
+
+// Brauchen -1 um auf Position zu kommen, weil wir bei 0 zu zählenn anfangen. 
+const pos = input.length / 2 - 1 
+
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  if (i === pos || i === pos + 1){
+    //macht nichts.
+  }else {
+    result.push(currentElement)
+}
+}
+
+
+} else {
+  //Input.length ist ungerade
+
+  const pos = Math.floor (input.length / 2 )
+//Das mittlere Zeichen soll gelöscht werden
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  
+  if (i === pos){
+//macht nichts
+}else {
+  result.push(currentElement)
+}
+}
+}
   return result.join("")
 }
 
