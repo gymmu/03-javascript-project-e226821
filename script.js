@@ -370,7 +370,7 @@ export function aufgabe17(args) {
 export function aufgabe18 (args) {
   const input = "17  Julia"
   const result = []
-  const text = "Ich heisse Julia und bin 17 Jahre alt."
+  const text = "Sie heissen Julia und sind 17 Jahre alt."
   const phrases = []
   let currentPhrase = []
   for (let i = 0; i < args.length; i++) {
@@ -443,7 +443,7 @@ for (let i = input.length -1; i>=0; i--) {
 }
 
 export function aufgabe22 (args) {
- 
+
   const input = args
   const result = []
   let firstPart = true
