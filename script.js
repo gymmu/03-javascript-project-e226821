@@ -367,28 +367,26 @@ export function aufgabe17(args) {
 }
 
 
-export function aufgabe18 (args) {
-  const input = "17  Julia"
+export function  aufgabe18 (args) {
+  const input = args
   const result = []
-  const text = "Sie heissen Julia und sind 17 Jahre alt."
-  const phrases = []
-  let currentPhrase = []
-  for (let i = 0; i < args.length; i++) {
-    const currentElement = [i]
-    if (currentElement === ',') {
-      
-      phrases.push(currentPhrase.join(""))
-      currentPhrase = []  // Alles löschen, was im aktuellen Satz drin ist.
-    } else {
-      // Wenn wir keinen '.' lesen, dann an den aktuellen Satz anhängen.
-      currentPhrase.push(currentElement)
-    }
-  }
-  return phrases
-
-
-  return result.join("")
+  let ausgabe = []
+ 
+  let parts = input.split(" ")
+ 
+if (parts.length === 2) {
+  let name = parts[0].trim()
+  let age = parts[1].trim()
+ausgabe = "Sie heissen " + name +
+" und sind " + age + " Jahre alt"
 }
+else ausgabe = "Sie heissen " + input +
+" und sind Jahre alt"
+ 
+return ausgabe
+}
+ 
+ 
 
 export function aufgabe19 (args) {
   const input = args
