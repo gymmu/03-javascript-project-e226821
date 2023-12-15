@@ -320,31 +320,20 @@ return result.join("")
 
 }
 
-export function aufgabe16 (args) {
+export function aufgabe16(args) {
   const input = args
   const result = []
-  const switchFirst = []
-  const listSecond = []
-  
-for (let i = 0; i < text.length; i++) {
-  if ( $[i] === "l") {
-    switchFirst = false
-  }else {
-    if (switchFirst === true) {
-      listFirst.push(text[i])
-    }else {
-      listSecond.push(text [i])
+ 
+  for (let i= 0; i < input.length; i++) {
+    const currentElement = input [i];
+    if (currentElement === '$'){  //sobald ein $ kommt, wird die Liste unterbrochen.
+      break;
     }
-  }
-  
-const result = [listFirst.join(""), list ]
-
-  if (currentElement === $)
-
-
-  return result.join("")
+    result.push(currentElement); // das currentElement wird dem result hinzugefügt.
 }
+return result.join('')//das result wird zurückgegeben.
 }
+ 
 
 
 
