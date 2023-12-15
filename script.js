@@ -60,28 +60,26 @@ count = count + 1
   return count
 }
 
-
-
-
 export function aufgabe04(args) {
   const input = args
   const result = []
-  let count = 0 
-  assert.equal(res,4)
-
-  // Sollte 4 Wörter zählen.
+  let count = 0
+  let isWord = false
+ 
   for (let i = 0; i < input.length; i++) {
-const currentElement = input[i]
-
-if (currentElement === ' '){
-count = count + 1 
-
-}
+    const currentChar = input[i];
+    const isAlphanumeric = /[a-zA-Z0-9äöüÄÖÜß]/.test(currentChar); // Überprüfe, ob das Zeichen alphanumerisch ist
+ 
+    if (isAlphanumeric && !isWord) {
+      isWord = true;
+      count++;
+    } else if (!isAlphanumeric && isWord && currentChar !== '-') {
+      isWord = false;
+    }
   }
-  count = count + 1
-  return count
+  return count;
 }
-
+ 
 
 
 export function aufgabe05(args) {
